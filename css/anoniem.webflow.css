@@ -40,6 +40,7 @@ body {
 }
 
 .form_container_middle {
+  background-color: #ddd0;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   align-items: stretch;
@@ -95,6 +96,7 @@ body {
 
 .link {
   color: #000;
+  cursor: pointer;
   font-size: 12px;
   line-height: 140%;
   text-decoration: none;
@@ -119,10 +121,14 @@ body {
   }
 
   .uppercontainer {
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
     flex-flow: column;
   }
 
   .uppersubcontainer {
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
     margin-bottom: -12px;
   }
 }
