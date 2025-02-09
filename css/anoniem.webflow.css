@@ -1,0 +1,137 @@
+.w-layout-vflex {
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+}
+
+body {
+  color: #000;
+  letter-spacing: .2px;
+  flex-flow: column;
+  justify-content: space-between;
+  padding: 24px;
+  font-family: Neuehaasunica, Arial, sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 140%;
+  display: flex;
+}
+
+.image {
+  width: 100%;
+}
+
+.buttontext {
+  font-size: 12px;
+  line-height: 140%;
+}
+
+.form_button {
+  color: #000;
+  background-color: #3898ec00;
+  padding: 8px 8px 6px;
+  display: block;
+}
+
+.code-embed {
+  background-color: #703535;
+  height: 20px;
+  display: none;
+}
+
+.form_container_middle {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  align-items: stretch;
+  padding: 8px 8px 6px;
+}
+
+.form_container_left {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  align-self: stretch;
+  align-items: stretch;
+  padding: 12px 0 12px 8px;
+}
+
+.form_buttonholder {
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+  flex-flow: row;
+}
+
+.form_container_right {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  align-self: stretch;
+  align-items: stretch;
+  padding: 12px 8px 12px 0;
+}
+
+.form_holder {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  flex-flow: row;
+}
+
+.uppercontainer {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.uppersubcontainer {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  max-width: 100%;
+}
+
+.link {
+  color: #000;
+  font-size: 12px;
+  line-height: 140%;
+  text-decoration: none;
+}
+
+.linkcontainer {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  flex-flow: row;
+}
+
+.form_container_middle_nostyle {
+  color: #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  align-items: stretch;
+}
+
+@media screen and (max-width: 479px) {
+  .form_holder {
+    flex-flow: wrap;
+  }
+
+  .uppercontainer {
+    flex-flow: column;
+  }
+
+  .uppersubcontainer {
+    margin-bottom: -12px;
+  }
+}
+
+
+@font-face {
+  font-family: 'Neuehaasunica';
+  src: url('../fonts/NeueHaasUnica-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
