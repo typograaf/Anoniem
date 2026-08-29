@@ -148,11 +148,11 @@ window.addEventListener("load", function () {
   // photographs down before anyone had scrolled.
   var built = new WeakSet();
 
-  function build(el) {
-    if (built.has(el)) return;
-    built.add(el);
-    var $el = $(el);
-    new Swiper($el.find(".swiper")[0], {
+  // Verbatim from Webflow's $(".slider-main_component").each(...) body, which
+  // refers to `this` for the pagination and navigation elements — so it is
+  // invoked with the section as the receiver rather than rewritten.
+  function construct() {
+    var swiper = new Swiper($(this).find(".swiper")[0], {
     slidesPerView: "auto",
     speed: 1000,
     keyboard: true,
@@ -191,6 +191,12 @@ window.addEventListener("load", function () {
       },
     },
   });
+  }
+
+  function build(el) {
+    if (built.has(el)) return;
+    built.add(el);
+    construct.call(el);
   }
 
   var sections = [].slice.call(document.querySelectorAll(".slider-main_component"));

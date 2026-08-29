@@ -107,6 +107,21 @@ function chrome(c: Content): Record<string, string> {
   }
 }
 
+const BULLET_PARTS = ['lefttop', 'righttop', 'leftbottom', 'rightbottom']
+  .map((corner) => `<div class="pagination_bullet_part ${corner}"></div>`)
+  .join('')
+
+/** Webflow's markup carries three of these regardless of how many photographs
+ *  a project has; Swiper re-renders them on init. Since the sliders are built
+ *  as they are approached rather than all at load, emitting the real count
+ *  means the pagination is right even in the moment before that happens. */
+function bullets(count: number): string {
+  return Array.from(
+    { length: Math.max(count, 1) },
+    (_, i) => `<div class="swiper-bullet${i === 0 ? ' is-active' : ''}">${BULLET_PARTS}</div>`,
+  ).join('')
+}
+
 /** Only the project on screen at load needs its photographs; the rest are a
  *  full viewport apart, so the browser fetches them as they are scrolled to.
  *  This is what takes the homepage from ~14 MB of images to well under one. */
@@ -130,6 +145,7 @@ function slides(images: ImageRef[], eager: boolean): string {
 function projectItem(p: Project, first: boolean): string {
   const slideHtml = slides(p.images, first)
   return fill(T.itemProject, {
+    BULLETS: bullets(p.images.length),
     TITLE: esc(p.title),
     YEAR: esc(p.year),
     LOCATION: esc(p.location),

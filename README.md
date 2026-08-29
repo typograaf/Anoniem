@@ -135,3 +135,22 @@ the work page still loads 989 KB and fills in from there. Measured landing on
 seventeen sections in a row, no image cached: 0 blank at 10 Mbps and while
 flicking, 1 at 4 Mbps, and on a 1.6 Mbps link the sections that cannot keep up
 now show the grey rather than black.
+
+### Pagination
+
+Webflow's slider config reads its pagination and navigation elements off
+`this` — it was the body of a `$(".slider-main_component").each(...)` callback.
+Deferring construction moved that code out of the callback and the receiver
+went with it, so Swiper got no pagination element, never replaced the markup's
+placeholder bullets, and nothing tracked the active slide. `construct` is now
+invoked with the section as its receiver, leaving the configuration verbatim.
+
+The markup Webflow ships carries three placeholder bullets whatever a project
+holds, because Swiper replaced them on init and all eighteen sliders were built
+at load. Now that they are built on approach, the renderer emits one bullet per
+photograph instead, so the count is right even in the moment before Swiper
+takes over.
+
+Checked against anoniem.webflow.io: bullet count equals slide count on every
+section, exactly one active, the active state advances with the autoplay,
+clicking a bullet moves the slider, and the corner is pixel-identical.
