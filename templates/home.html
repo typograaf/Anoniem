@@ -142,8 +142,17 @@ window.addEventListener("load", function () {
 });
 </script>
 <script>
-$(".slider-main_component").each(function (index) {
-  const swiper = new Swiper($(this).find(".swiper")[0], {
+(function () {
+  // Identical Swiper configuration; only the moment of construction changed.
+  // Building all eighteen at load clones every slide, which pulled all forty
+  // photographs down before anyone had scrolled.
+  var built = new WeakSet();
+
+  function build(el) {
+    if (built.has(el)) return;
+    built.add(el);
+    var $el = $(el);
+    new Swiper($el.find(".swiper")[0], {
     slidesPerView: "auto",
     speed: 1000,
     keyboard: true,
@@ -182,7 +191,31 @@ $(".slider-main_component").each(function (index) {
       },
     },
   });
-});
+  }
+
+  var sections = [].slice.call(document.querySelectorAll(".slider-main_component"));
+  var root = document.querySelector("[n-parent]");
+
+  if (!("IntersectionObserver" in window) || !root) {
+    sections.forEach(build);
+    return;
+  }
+
+  // A viewport and a half of lead time, so a slider is already running before
+  // the section it belongs to is scrolled into view.
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      build(entry.target);
+      io.unobserve(entry.target);
+    });
+  }, { root: root, rootMargin: "150% 0px" });
+
+  sections.forEach(function (section, i) {
+    if (i === 0) build(section);
+    else io.observe(section);
+  });
+})();
 </script>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
