@@ -87,11 +87,23 @@ for (const file of sources) {
 
   for (const e of entries) after += fs.statSync(path.join(process.cwd(), 'public', e.src.slice(1).replace('media/', 'media/'))).size
 
+  // Average tone, used as the backdrop while a photograph is still arriving.
+  // The section behind is solid black, and on a slow connection that reads as a
+  // hole; the image's own mid-grey resolves into it instead.
+  const { channels } = await sharp(input).resize(16, 16, { fit: 'cover' }).stats()
+  const hex =
+    '#' +
+    channels
+      .slice(0, 3)
+      .map((c) => Math.round(c.mean).toString(16).padStart(2, '0'))
+      .join('')
+
   manifest[`/media/${file}`] = {
     src: `/media/${fullName}`,
     srcset: entries.map((e) => `${e.src} ${e.w}w`).join(', '),
     width: fullW,
     height: Math.round((meta.height ?? fullW) * (fullW / srcW)),
+    tone: hex,
   }
   process.stdout.write('.')
 }

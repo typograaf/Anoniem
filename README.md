@@ -104,3 +104,34 @@ Vercel Blob is eventually consistent, so a save in /admin takes roughly ten
 seconds to be readable everywhere — not a caching bug, and not something a
 cache-buster fixes. /admin says so after saving. Webflow's own publish was
 slower.
+
+### Scrolling
+
+Three things were making sections appear black and pop in:
+
+1. **The slider collapsed to zero width while its photograph loaded.** Swiper's
+   own stylesheet gives `.swiper` auto side margins, so as a flex item in the
+   column-flex section it shrink-wraps to its content — and with
+   `slidesPerView: "auto"` the slide is `width: 100%` of a wrapper sized from
+   the slides, which is circular and resolves to nothing until an image gives
+   it an intrinsic size. `.swiper.is-slider-main { width: 100% }` breaks it.
+   This was the real cause; it just looked like a slow image.
+2. **`loading="lazy"` reaches about one and a half screens out**, which is not
+   enough for full-viewport scroll-snap sections. `public/js/image-warmup.js`
+   warms them further ahead, in two tiers: the slide you will land on four
+   screens out, the rest of that section's slides one screen out. Only one
+   slide per section is ever on screen, so fetching all fifteen of a section's
+   photographs would just delay the next section's first one.
+3. **Nothing ran behind an image that had not arrived.** Each photograph's own
+   average tone is stored in `media-manifest.json` and set as the `<img>`
+   background, so a slow connection resolves out of the picture's own mid-grey
+   rather than a black hole. The `grayscale()` filter on the element applies to
+   the background too, so it greys out with the photograph. Only on images that
+   cover their box — never the contained team portraits, where it would show as
+   a border.
+
+The warm-up does not start until the load event, so first paint is untouched:
+the work page still loads 989 KB and fills in from there. Measured landing on
+seventeen sections in a row, no image cached: 0 blank at 10 Mbps and while
+flicking, 1 at 4 Mbps, and on a 1.6 Mbps link the sections that cannot keep up
+now show the grey rather than black.

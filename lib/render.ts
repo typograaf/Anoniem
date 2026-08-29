@@ -2,13 +2,13 @@ import * as T from './templates'
 import manifest from '../media-manifest.json'
 import { seedContent, type Content, type ImageRef, type Member, type Project, type Service } from './content'
 
-type ManifestEntry = { src: string; srcset: string; width: number; height: number }
+type ManifestEntry = { src: string; srcset: string; width: number; height: number; tone?: string }
 const MEDIA = manifest as Record<string, ManifestEntry>
 
 /** Every bundled image has a responsive AVIF ladder built by
  *  scripts/optimize-media.mjs. Images uploaded through /admin carry their own
  *  srcset, so both shapes resolve the same way here. */
-function resolve(image: ImageRef): { src: string; srcset?: string; sizes?: string } {
+function resolve(image: ImageRef): { src: string; srcset?: string; sizes?: string; tone?: string } {
   const src = typeof image === 'string' ? image : image?.src
   if (!src) return { src: '' }
   const hit =
@@ -18,7 +18,7 @@ function resolve(image: ImageRef): { src: string; srcset?: string; sizes?: strin
     // bundled, so those stale URLs never reach the page.
     MEDIA[src.replace(/\.[^./]+$/, '.avif')] ??
     Object.values(MEDIA).find((m) => m.src === src)
-  if (hit) return { src: hit.src, srcset: hit.srcset }
+  if (hit) return { src: hit.src, srcset: hit.srcset, tone: hit.tone }
   return typeof image === 'string' ? { src: image } : image
 }
 
@@ -52,16 +52,22 @@ function fill(template: string, values: Record<string, string>): string {
  *  Webflow put them. */
 function imgTag(
   image: ImageRef,
-  { loading, className, sizes, height, priority }: {
+  { loading, className, sizes, height, priority, tone }: {
     loading: 'eager' | 'lazy'
     className: string
     sizes: string
     height?: string
     priority?: boolean
+    /** Paint the photograph's own average tone behind it while it loads. Only
+     *  for images that cover their box, never for the contained portraits,
+     *  where it would show as a border. The grayscale filter on the element
+     *  applies to the background too, so this greys out with the photograph. */
+    tone?: boolean
   },
 ): string {
   const ref = resolve(image)
   const parts = [`src="${esc(ref.src)}"`, `loading="${loading}"`, 'alt=""']
+  if (tone && ref.tone) parts.push(`style="background-color:${esc(ref.tone)}"`)
   if (height) parts.push(`height="${height}"`)
   const s = ref.sizes ?? (ref.srcset ? sizes : undefined)
   if (s) parts.push(`sizes="${esc(s)}"`)
@@ -114,6 +120,7 @@ function slides(images: ImageRef[], eager: boolean): string {
           sizes: SIZES.slide,
           height: 'Auto',
           priority: eager && i === 0,
+          tone: true,
         }),
       }),
     )
@@ -137,7 +144,7 @@ function projectItem(p: Project, first: boolean): string {
 
 function serviceItem(s: Service, contactHref: string): string {
   return fill(T.itemService, {
-    IMAGE: imgTag(s.image, { loading: 'lazy', className: 'image-4', sizes: SIZES.service }),
+    IMAGE: imgTag(s.image, { loading: 'lazy', className: 'image-4', sizes: SIZES.service, tone: true }),
     TITLE: esc(s.title),
     DESCRIPTION: s.description,
     CONTACT_HREF: esc(contactHref),

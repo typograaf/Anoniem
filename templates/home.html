@@ -201,8 +201,10 @@ window.addEventListener("load", function () {
     return;
   }
 
-  // A viewport and a half of lead time, so a slider is already running before
-  // the section it belongs to is scrolled into view.
+  // A viewport and a half of lead time. Reaching further forward measurably
+  // doubled the first load: laying a slider out brings its slides inside the
+  // browser's own lazy threshold. The photographs are handled separately, by
+  // image-warmup.js, which does not start until after load.
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (!entry.isIntersecting) return;
@@ -231,4 +233,4 @@ document.addEventListener("DOMContentLoaded", function () {
         scrollSnapWrapper.appendChild(footer);
     }
 });
-</script></body></html>
+</script><script src="/js/image-warmup.js" defer></script></body></html>

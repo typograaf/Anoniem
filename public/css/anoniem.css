@@ -3310,3 +3310,11 @@ a {
 @media (min-width:700px){.about_extendedimg{background-image:url("/media/achtergrond-p-1600.avif")}}
 @media (min-width:1200px){.about_extendedimg{background-image:url("/media/achtergrond-p-2048.avif")}}
 @media (min-width:1700px){.about_extendedimg{background-image:url("/media/achtergrond.avif")}}
+
+/* Swiper's own stylesheet gives .swiper auto side margins, so as a flex item in
+   the column-flex section it shrink-wraps to its content instead of stretching.
+   Until a photograph has decoded that content is zero wide, and the slider
+   collapses to nothing — the section's black backdrop, then a pop as the image
+   lands. An explicit width breaks the circularity: the slide is 100% of the
+   wrapper, the wrapper 100% of this, and none of it waits on an image. */
+.swiper.is-slider-main { width: 100%; }
