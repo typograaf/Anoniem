@@ -136,8 +136,21 @@ export function renderOverOns(c: Content): string {
   })
 }
 
-export function htmlResponse(html: string): Response {
+/** Webflow only ever served its own generic system 404, which carries Webflow
+ *  branding. This one is the site's own chrome — same nav, heading block and
+ *  footer — with the message in its place. */
+export function renderNotFound(c: Content): string {
+  return fill(T.notFound, {
+    ...chrome(c),
+    ABOUT_HEADING: '404.',
+    ABOUT_SUBHEADING: 'Deze pagina bestaat niet, of bestaat niet meer.',
+    HEAD_EXTRA: backgroundStyle(c, 'about'),
+  })
+}
+
+export function htmlResponse(html: string, status = 200): Response {
   return new Response(html, {
+    status,
     headers: {
       'content-type': 'text/html; charset=utf-8',
       // Content is editable in /admin and must appear the moment it is saved.

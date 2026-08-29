@@ -6,6 +6,7 @@ const files = {
   home: 'home.html',
   aanbod: 'aanbod.html',
   overOns: 'over-ons.html',
+  notFound: '404.html',
   itemProject: 'item-project.html',
   itemSlide: 'item-slide.html',
   itemService: 'item-service.html',
