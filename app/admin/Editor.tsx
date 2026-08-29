@@ -118,17 +118,17 @@ function Gallery({
   onChange,
   onBusy,
 }: {
-  images: string[]
-  onChange: (v: string[]) => void
+  images: ImageRef[]
+  onChange: (v: ImageRef[]) => void
   onBusy: (busy: boolean) => void
 }) {
   const [error, setError] = useState('')
   return (
     <div className="gallery">
       <div className="gallery__grid">
-        {images.map((src, i) => (
-          <figure className="gallery__item" key={`${src}-${i}`}>
-            <img className="gallery__img" src={src} alt="" />
+        {images.map((image, i) => (
+          <figure className="gallery__item" key={`${srcOf(image)}-${i}`}>
+            <img className="gallery__img" src={srcOf(image)} alt="" />
             <figcaption className="gallery__tools">
               <button type="button" className="chip" onClick={() => onChange(move(images, i, i - 1))} disabled={i === 0}>
                 ←
@@ -166,8 +166,8 @@ function Gallery({
             setError('')
             onBusy(true)
             try {
-              const uploaded: string[] = []
-              for (const file of files) uploaded.push(srcOf(await uploadImage(file)))
+              const uploaded: ImageRef[] = []
+              for (const file of files) uploaded.push(await uploadImage(file))
               onChange([...images, ...uploaded])
             } catch (err) {
               setError(err instanceof Error ? err.message : 'Uploaden mislukt')

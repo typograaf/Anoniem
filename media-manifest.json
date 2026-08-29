@@ -1,0 +1,278 @@
+{
+  "/media/0b0rdkpk.avif": {
+    "src": "/media/0b0rdkpk.avif",
+    "srcset": "/media/0b0rdkpk-p-640.avif 640w, /media/0b0rdkpk.avif 800w",
+    "width": 800,
+    "height": 600
+  },
+  "/media/1.avif": {
+    "src": "/media/1.avif",
+    "srcset": "/media/1-p-640.avif 640w, /media/1.avif 1080w",
+    "width": 1080,
+    "height": 1557
+  },
+  "/media/2.avif": {
+    "src": "/media/2.avif",
+    "srcset": "/media/2-p-640.avif 640w, /media/2.avif 1080w",
+    "width": 1080,
+    "height": 1557
+  },
+  "/media/20250918-173902.avif": {
+    "src": "/media/20250918-173902.avif",
+    "srcset": "/media/20250918-173902-p-640.avif 640w, /media/20250918-173902-p-1080.avif 1080w, /media/20250918-173902-p-1600.avif 1600w, /media/20250918-173902-p-2048.avif 2048w, /media/20250918-173902.avif 2560w",
+    "width": 2560,
+    "height": 2735
+  },
+  "/media/20250918-173936-1.avif": {
+    "src": "/media/20250918-173936-1.avif",
+    "srcset": "/media/20250918-173936-1-p-640.avif 640w, /media/20250918-173936-1-p-1080.avif 1080w, /media/20250918-173936-1-p-1600.avif 1600w, /media/20250918-173936-1-p-2048.avif 2048w, /media/20250918-173936-1.avif 2560w",
+    "width": 2560,
+    "height": 1442
+  },
+  "/media/20250928-183731-2.avif": {
+    "src": "/media/20250928-183731-2.avif",
+    "srcset": "/media/20250928-183731-2-p-640.avif 640w, /media/20250928-183731-2-p-1080.avif 1080w, /media/20250928-183731-2-p-1600.avif 1600w, /media/20250928-183731-2-p-2048.avif 2048w, /media/20250928-183731-2.avif 2560w",
+    "width": 2560,
+    "height": 1536
+  },
+  "/media/20250928-183738.avif": {
+    "src": "/media/20250928-183738.avif",
+    "srcset": "/media/20250928-183738-p-640.avif 640w, /media/20250928-183738-p-1080.avif 1080w, /media/20250928-183738-p-1600.avif 1600w, /media/20250928-183738-p-2048.avif 2048w, /media/20250928-183738.avif 2560w",
+    "width": 2560,
+    "height": 1442
+  },
+  "/media/20250928-183803.avif": {
+    "src": "/media/20250928-183803.avif",
+    "srcset": "/media/20250928-183803-p-640.avif 640w, /media/20250928-183803-p-1080.avif 1080w, /media/20250928-183803-p-1600.avif 1600w, /media/20250928-183803-p-2048.avif 2048w, /media/20250928-183803.avif 2560w",
+    "width": 2560,
+    "height": 1442
+  },
+  "/media/20250928-183832-2.avif": {
+    "src": "/media/20250928-183832-2.avif",
+    "srcset": "/media/20250928-183832-2-p-640.avif 640w, /media/20250928-183832-2-p-1080.avif 1080w, /media/20250928-183832-2-p-1600.avif 1600w, /media/20250928-183832-2-p-2048.avif 2048w, /media/20250928-183832-2.avif 2560w",
+    "width": 2560,
+    "height": 1442
+  },
+  "/media/20251001-184036-1.avif": {
+    "src": "/media/20251001-184036-1.avif",
+    "srcset": "/media/20251001-184036-1-p-640.avif 640w, /media/20251001-184036-1-p-1080.avif 1080w, /media/20251001-184036-1-p-1600.avif 1600w, /media/20251001-184036-1-p-2048.avif 2048w, /media/20251001-184036-1.avif 2560w",
+    "width": 2560,
+    "height": 1442
+  },
+  "/media/20260126-133545.avif": {
+    "src": "/media/20260126-133545.avif",
+    "srcset": "/media/20260126-133545-p-640.avif 640w, /media/20260126-133545-p-1080.avif 1080w, /media/20260126-133545-p-1600.avif 1600w, /media/20260126-133545-p-2048.avif 2048w, /media/20260126-133545.avif 2560w",
+    "width": 2560,
+    "height": 1522
+  },
+  "/media/20260126-133550.avif": {
+    "src": "/media/20260126-133550.avif",
+    "srcset": "/media/20260126-133550-p-640.avif 640w, /media/20260126-133550-p-1080.avif 1080w, /media/20260126-133550-p-1600.avif 1600w, /media/20260126-133550-p-2048.avif 2048w, /media/20260126-133550.avif 2560w",
+    "width": 2560,
+    "height": 1442
+  },
+  "/media/7k04ucys.avif": {
+    "src": "/media/7k04ucys.avif",
+    "srcset": "/media/7k04ucys-p-640.avif 640w, /media/7k04ucys-p-1080.avif 1080w, /media/7k04ucys-p-1600.avif 1600w, /media/7k04ucys-p-2048.avif 2048w, /media/7k04ucys.avif 2560w",
+    "width": 2560,
+    "height": 2560
+  },
+  "/media/9xujijca.avif": {
+    "src": "/media/9xujijca.avif",
+    "srcset": "/media/9xujijca-p-640.avif 640w, /media/9xujijca.avif 1015w",
+    "width": 1015,
+    "height": 1015
+  },
+  "/media/achtergrond.avif": {
+    "src": "/media/achtergrond.avif",
+    "srcset": "/media/achtergrond-p-640.avif 640w, /media/achtergrond-p-1080.avif 1080w, /media/achtergrond-p-1600.avif 1600w, /media/achtergrond-p-2048.avif 2048w, /media/achtergrond.avif 2560w",
+    "width": 2560,
+    "height": 1920
+  },
+  "/media/aj267lm.avif": {
+    "src": "/media/aj267lm.avif",
+    "srcset": "/media/aj267lm-p-640.avif 640w, /media/aj267lm-p-1080.avif 1080w, /media/aj267lm-p-1600.avif 1600w, /media/aj267lm-p-2048.avif 2048w, /media/aj267lm.avif 2560w",
+    "width": 2560,
+    "height": 1940
+  },
+  "/media/clarafe1.avif": {
+    "src": "/media/clarafe1.avif",
+    "srcset": "/media/clarafe1-p-640.avif 640w, /media/clarafe1.avif 1200w",
+    "width": 1200,
+    "height": 1200
+  },
+  "/media/dsc01229-1.avif": {
+    "src": "/media/dsc01229-1.avif",
+    "srcset": "/media/dsc01229-1-p-640.avif 640w, /media/dsc01229-1-p-1080.avif 1080w, /media/dsc01229-1.avif 1600w",
+    "width": 1600,
+    "height": 1200
+  },
+  "/media/eiqemga.avif": {
+    "src": "/media/eiqemga.avif",
+    "srcset": "/media/eiqemga-p-640.avif 640w, /media/eiqemga-p-1080.avif 1080w, /media/eiqemga-p-1600.avif 1600w, /media/eiqemga-p-2048.avif 2048w, /media/eiqemga.avif 2560w",
+    "width": 2560,
+    "height": 1920
+  },
+  "/media/ejofjtyq.avif": {
+    "src": "/media/ejofjtyq.avif",
+    "srcset": "/media/ejofjtyq-p-640.avif 640w, /media/ejofjtyq-p-1080.avif 1080w, /media/ejofjtyq-p-1600.avif 1600w, /media/ejofjtyq-p-2048.avif 2048w, /media/ejofjtyq.avif 2560w",
+    "width": 2560,
+    "height": 1707
+  },
+  "/media/img-20240325-092217-045.avif": {
+    "src": "/media/img-20240325-092217-045.avif",
+    "srcset": "/media/img-20240325-092217-045-p-640.avif 640w, /media/img-20240325-092217-045.avif 1198w",
+    "width": 1198,
+    "height": 1198
+  },
+  "/media/img-20250109-170735-495.avif": {
+    "src": "/media/img-20250109-170735-495.avif",
+    "srcset": "/media/img-20250109-170735-495.avif 716w",
+    "width": 716,
+    "height": 646
+  },
+  "/media/partijk-geel-1.avif": {
+    "src": "/media/partijk-geel-1.avif",
+    "srcset": "/media/partijk-geel-1-p-640.avif 640w, /media/partijk-geel-1-p-1080.avif 1080w, /media/partijk-geel-1-p-1600.avif 1600w, /media/partijk-geel-1.avif 2252w",
+    "width": 2252,
+    "height": 4000
+  },
+  "/media/peter1.avif": {
+    "src": "/media/peter1.avif",
+    "srcset": "/media/peter1.avif 640w",
+    "width": 640,
+    "height": 480
+  },
+  "/media/peter2.avif": {
+    "src": "/media/peter2.avif",
+    "srcset": "/media/peter2.avif 720w",
+    "width": 720,
+    "height": 540
+  },
+  "/media/poppel.avif": {
+    "src": "/media/poppel.avif",
+    "srcset": "/media/poppel-p-640.avif 640w, /media/poppel.avif 1204w",
+    "width": 1204,
+    "height": 1161
+  },
+  "/media/poppel1.avif": {
+    "src": "/media/poppel1.avif",
+    "srcset": "/media/poppel1-p-640.avif 640w, /media/poppel1.avif 1204w",
+    "width": 1204,
+    "height": 1137
+  },
+  "/media/praktijk-geel-2.avif": {
+    "src": "/media/praktijk-geel-2.avif",
+    "srcset": "/media/praktijk-geel-2-p-640.avif 640w, /media/praktijk-geel-2-p-1080.avif 1080w, /media/praktijk-geel-2-p-1600.avif 1600w, /media/praktijk-geel-2.avif 2252w",
+    "width": 2252,
+    "height": 4000
+  },
+  "/media/praktijk-geel-3.avif": {
+    "src": "/media/praktijk-geel-3.avif",
+    "srcset": "/media/praktijk-geel-3-p-640.avif 640w, /media/praktijk-geel-3-p-1080.avif 1080w, /media/praktijk-geel-3-p-1600.avif 1600w, /media/praktijk-geel-3.avif 1975w",
+    "width": 1975,
+    "height": 3576
+  },
+  "/media/praktijk-geel-4.avif": {
+    "src": "/media/praktijk-geel-4.avif",
+    "srcset": "/media/praktijk-geel-4-p-640.avif 640w, /media/praktijk-geel-4-p-1080.avif 1080w, /media/praktijk-geel-4-p-1600.avif 1600w, /media/praktijk-geel-4-p-2048.avif 2048w, /media/praktijk-geel-4.avif 2479w",
+    "width": 2479,
+    "height": 4441
+  },
+  "/media/praktijk-geel-5.avif": {
+    "src": "/media/praktijk-geel-5.avif",
+    "srcset": "/media/praktijk-geel-5-p-640.avif 640w, /media/praktijk-geel-5-p-1080.avif 1080w, /media/praktijk-geel-5.avif 1626w",
+    "width": 1626,
+    "height": 2694
+  },
+  "/media/sjaal.avif": {
+    "src": "/media/sjaal.avif",
+    "srcset": "/media/sjaal-p-640.avif 640w, /media/sjaal.avif 960w",
+    "width": 960,
+    "height": 1280
+  },
+  "/media/thys-lier-1.avif": {
+    "src": "/media/thys-lier-1.avif",
+    "srcset": "/media/thys-lier-1-p-640.avif 640w, /media/thys-lier-1.avif 1200w",
+    "width": 1200,
+    "height": 1600
+  },
+  "/media/thys-lier-2.avif": {
+    "src": "/media/thys-lier-2.avif",
+    "srcset": "/media/thys-lier-2-p-640.avif 640w, /media/thys-lier-2.avif 1204w",
+    "width": 1204,
+    "height": 1600
+  },
+  "/media/thys-lier-3.avif": {
+    "src": "/media/thys-lier-3.avif",
+    "srcset": "/media/thys-lier-3-p-640.avif 640w, /media/thys-lier-3-p-1080.avif 1080w, /media/thys-lier-3.avif 1530w",
+    "width": 1530,
+    "height": 2040
+  },
+  "/media/thys-lier-4.avif": {
+    "src": "/media/thys-lier-4.avif",
+    "srcset": "/media/thys-lier-4-p-640.avif 640w, /media/thys-lier-4-p-1080.avif 1080w, /media/thys-lier-4.avif 1530w",
+    "width": 1530,
+    "height": 2040
+  },
+  "/media/thys-lier-5.avif": {
+    "src": "/media/thys-lier-5.avif",
+    "srcset": "/media/thys-lier-5-p-640.avif 640w, /media/thys-lier-5-p-1080.avif 1080w, /media/thys-lier-5.avif 1530w",
+    "width": 1530,
+    "height": 2040
+  },
+  "/media/vrijens1.avif": {
+    "src": "/media/vrijens1.avif",
+    "srcset": "/media/vrijens1-p-640.avif 640w, /media/vrijens1-p-1080.avif 1080w, /media/vrijens1-p-1600.avif 1600w, /media/vrijens1-p-2048.avif 2048w, /media/vrijens1.avif 2560w",
+    "width": 2560,
+    "height": 1920
+  },
+  "/media/vrijens2.avif": {
+    "src": "/media/vrijens2.avif",
+    "srcset": "/media/vrijens2-p-640.avif 640w, /media/vrijens2-p-1080.avif 1080w, /media/vrijens2-p-1600.avif 1600w, /media/vrijens2-p-2048.avif 2048w, /media/vrijens2.avif 2560w",
+    "width": 2560,
+    "height": 1920
+  },
+  "/media/vrijens3.avif": {
+    "src": "/media/vrijens3.avif",
+    "srcset": "/media/vrijens3-p-640.avif 640w, /media/vrijens3-p-1080.avif 1080w, /media/vrijens3-p-1600.avif 1600w, /media/vrijens3-p-2048.avif 2048w, /media/vrijens3.avif 2560w",
+    "width": 2560,
+    "height": 1920
+  },
+  "/media/whnwzuay.avif": {
+    "src": "/media/whnwzuay.avif",
+    "srcset": "/media/whnwzuay-p-640.avif 640w, /media/whnwzuay.avif 800w",
+    "width": 800,
+    "height": 600
+  },
+  "/media/winkel1.avif": {
+    "src": "/media/winkel1.avif",
+    "srcset": "/media/winkel1-p-640.avif 640w, /media/winkel1-p-1080.avif 1080w, /media/winkel1.avif 1440w",
+    "width": 1440,
+    "height": 1440
+  },
+  "/media/winkel2.avif": {
+    "src": "/media/winkel2.avif",
+    "srcset": "/media/winkel2-p-640.avif 640w, /media/winkel2-p-1080.avif 1080w, /media/winkel2-p-1600.avif 1600w, /media/winkel2-p-2048.avif 2048w, /media/winkel2.avif 2560w",
+    "width": 2560,
+    "height": 1920
+  },
+  "/media/wito1.avif": {
+    "src": "/media/wito1.avif",
+    "srcset": "/media/wito1-p-640.avif 640w, /media/wito1-p-1080.avif 1080w, /media/wito1-p-1600.avif 1600w, /media/wito1-p-2048.avif 2048w, /media/wito1.avif 2560w",
+    "width": 2560,
+    "height": 3414
+  },
+  "/media/wito2.avif": {
+    "src": "/media/wito2.avif",
+    "srcset": "/media/wito2-p-640.avif 640w, /media/wito2-p-1080.avif 1080w, /media/wito2-p-1600.avif 1600w, /media/wito2-p-2048.avif 2048w, /media/wito2.avif 2560w",
+    "width": 2560,
+    "height": 2999
+  },
+  "/media/xvrrftcw.avif": {
+    "src": "/media/xvrrftcw.avif",
+    "srcset": "/media/xvrrftcw-p-640.avif 640w, /media/xvrrftcw-p-1080.avif 1080w, /media/xvrrftcw-p-1600.avif 1600w, /media/xvrrftcw-p-2048.avif 2048w, /media/xvrrftcw.avif 2560w",
+    "width": 2560,
+    "height": 1920
+  }
+}

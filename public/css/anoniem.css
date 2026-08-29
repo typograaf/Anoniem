@@ -2077,7 +2077,7 @@ textarea.w-input, textarea.w-select {
 
 @font-face {
   font-family: Neuehaasunica;
-  src: url("/fonts/NeueHaasUnica-Regular.ttf") format("truetype");
+  src: url("/fonts/NeueHaasUnica-Regular.woff2") format("woff2"), url("/fonts/NeueHaasUnica-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2085,7 +2085,7 @@ textarea.w-input, textarea.w-select {
 
 @font-face {
   font-family: Helveticanowvar;
-  src: url("/fonts/HelveticaNowVar.ttf") format("truetype");
+  src: url("/fonts/HelveticaNowVar.woff2") format("woff2"), url("/fonts/HelveticaNowVar.ttf") format("truetype");
   font-weight: 50 1000;
   font-style: normal;
   font-display: swap;
@@ -2749,7 +2749,7 @@ a {
 .service_extendedimg {
   z-index: 0;
   filter: grayscale();
-  background-image: url("/media/20251001-184036-1.jpg");
+  background-image: url("/media/20251001-184036-1-p-1080.avif");
   background-position: 50%;
   background-size: cover;
   width: 100vw;
@@ -2834,7 +2834,7 @@ a {
 .about_extendedimg {
   z-index: 0;
   filter: brightness(80%) grayscale();
-  background-image: url("/media/achtergrond.jpeg");
+  background-image: url("/media/achtergrond-p-1080.avif");
   background-position: 50%;
   background-size: cover;
   width: 100vw;
@@ -3300,3 +3300,13 @@ a {
     flex: 1;
   }
 }
+
+
+/* Responsive ladder for the two full-viewport backgrounds. Added on top of
+   Webflow's stylesheet so a phone is not sent a 2560px photograph. */
+@media (min-width:700px){.service_extendedimg{background-image:url("/media/20251001-184036-1-p-1600.avif")}}
+@media (min-width:1200px){.service_extendedimg{background-image:url("/media/20251001-184036-1-p-2048.avif")}}
+@media (min-width:1700px){.service_extendedimg{background-image:url("/media/20251001-184036-1.avif")}}
+@media (min-width:700px){.about_extendedimg{background-image:url("/media/achtergrond-p-1600.avif")}}
+@media (min-width:1200px){.about_extendedimg{background-image:url("/media/achtergrond-p-2048.avif")}}
+@media (min-width:1700px){.about_extendedimg{background-image:url("/media/achtergrond.avif")}}

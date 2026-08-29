@@ -7,9 +7,11 @@ export const maxDuration = 60
 
 /** Same ladder Webflow generated for this site, so uploads slot into the
  *  existing srcset shape. The full-size render is capped at FULL_WIDTH. */
-const WIDTHS = [500, 800, 1080, 1600]
+// Same ladder and quality as scripts/optimize-media.mjs, so an uploaded photo
+// behaves exactly like the bundled ones.
+const WIDTHS = [640, 1080, 1600, 2048]
 const FULL_WIDTH = 2560
-const QUALITY = 62
+const QUALITY = 65
 // AVIF encoding is the slow part and this runs inside a 60s function, so keep
 // the search effort low and encode every width at once.
 const EFFORT = 3
@@ -61,7 +63,7 @@ export async function POST(req: Request) {
     })
   }
 
-  const widths = WIDTHS.filter((w) => w < fullWidth)
+  const widths = WIDTHS.filter((w) => w < fullWidth * 0.88)
   const [full, ...variants] = await Promise.all([
     store(`media/${stem}.avif`, null),
     ...widths.map((w) => store(`media/${stem}-p-${w}.avif`, w)),
@@ -73,7 +75,7 @@ export async function POST(req: Request) {
   return Response.json({
     src: full.url,
     srcset: srcsetParts.join(', '),
-    sizes: '(max-width: 479px) 100vw, 50vw',
+    // Left off deliberately: the renderer knows the slot each image sits in.
     width: fullWidth,
   })
 }

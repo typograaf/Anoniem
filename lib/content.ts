@@ -12,7 +12,9 @@ export type Project = {
   description: string
   /** Comma-separated tag list; the Webflow page script splits it into buttons. */
   services: string
-  images: string[]
+  /** A bundled path resolves its srcset from media-manifest.json; an upload
+   *  carries its own. */
+  images: ImageRef[]
 }
 
 export type Service = {
@@ -99,6 +101,8 @@ export async function getContent(): Promise<Content> {
   try {
     const url = await blobUrl()
     if (!url) return seedContent
+    // Cache-buster: the blob's public URL sits behind a CDN, and a save has
+    // to be visible on the very next request.
     const res = await fetch(`${url}?t=${Date.now()}`, { cache: 'no-store' })
     if (!res.ok) return seedContent
     const data = (await res.json()) as Content

@@ -42,8 +42,8 @@
       "termsLabel": "Algemene Voorwaarden"
     },
     "backgrounds": {
-      "about": "/media/achtergrond.jpeg",
-      "services": "/media/20251001-184036-1.jpg"
+      "about": "/media/achtergrond.avif",
+      "services": "/media/20251001-184036-1.avif"
     }
   },
   "projects": [
@@ -55,8 +55,8 @@
       "description": "<p>Afbraak oude badkamer en het creëren van een moderne instapklare badkamer, inclusief electriciteit en loodgieterij.</p>",
       "services": "afwerking, projectopvolging",
       "images": [
-        "/media/poppel.jpg",
-        "/media/poppel1.jpg"
+        "/media/poppel.avif",
+        "/media/poppel1.avif"
       ]
     },
     {
@@ -67,8 +67,8 @@
       "description": "<p>Afwerking zolder (gipskartonplaten), inclusief aanpassen electriciteit</p>",
       "services": "afwerking",
       "images": [
-        "/media/thys-lier-1.jpg",
-        "/media/thys-lier-2.jpg"
+        "/media/thys-lier-1.avif",
+        "/media/thys-lier-2.avif"
       ]
     },
     {
@@ -79,9 +79,9 @@
       "description": "<p>Het heraanleggen van een ommuurd terras met blauwe steen, inclusief rioleringswerken</p>",
       "services": "afwerking, buitenhuis",
       "images": [
-        "/media/thys-lier-3.jpg",
-        "/media/thys-lier-5.jpg",
-        "/media/thys-lier-4.jpg"
+        "/media/thys-lier-3.avif",
+        "/media/thys-lier-5.avif",
+        "/media/thys-lier-4.avif"
       ]
     },
     {
@@ -92,11 +92,11 @@
       "description": "<p>Totaal renovatie van 2 bestaande woningen tot één nieuwe dokterpraktijk. Van afbraak tot eindafwerking.</p><p>(Gipskartonwanden, systeemplafonds, vinylvloeren, loodgieterij en electriciteit)</p>",
       "services": "projectopvolging, afwerking",
       "images": [
-        "/media/partijk-geel-1.jpg",
-        "/media/praktijk-geel-2.jpg",
-        "/media/praktijk-geel-3.jpg",
-        "/media/praktijk-geel-4.jpg",
-        "/media/praktijk-geel-5.jpg"
+        "/media/partijk-geel-1.avif",
+        "/media/praktijk-geel-2.avif",
+        "/media/praktijk-geel-3.avif",
+        "/media/praktijk-geel-4.avif",
+        "/media/praktijk-geel-5.avif"
       ]
     },
     {
@@ -119,8 +119,8 @@
       "description": "<p>Renovatie van een HYPOTHEEK-winkel in Lier, van afbraak tot afwerking.</p>",
       "services": "afwerking, ruwbouw",
       "images": [
-        "/media/20260126-133545.jpg",
-        "/media/20260126-133550.jpg"
+        "/media/20260126-133545.avif",
+        "/media/20260126-133550.avif"
       ]
     },
     {
@@ -131,7 +131,7 @@
       "description": "<p>Het vervangen van keukenbladen en spatwanden in een bestaande keuken.</p>",
       "services": "afwerking",
       "images": [
-        "/media/img-20250109-170735-495.jpg"
+        "/media/img-20250109-170735-495.avif"
       ]
     },
     {
@@ -273,39 +273,25 @@
       "id": "ruwbouw",
       "title": "Ruwbouw",
       "description": "<p>Voor alle ruwbouwwerken kan u ook bij ons terecht. Zowel voor het plaatsen van steunbalken of poutrellen, als het uitvoeren van beton- en metselwerken. Ook kleine graaf- en funderingswerken kunnen wij u verzorgen. Tevens maken wij ook deuropeningen met lenteel in alle mogelijke muren.</p>",
-      "image": {
-        "src": "/media/dsc01229-1.avif",
-        "srcset": "/media/dsc01229-1-p-500.avif 500w, /media/dsc01229-1-p-800.avif 800w, /media/dsc01229-1.avif 1600w",
-        "sizes": "(max-width: 479px) 100vw, 50vw"
-      }
+      "image": "/media/dsc01229-1.avif"
     },
     {
       "id": "buitenshuis",
       "title": "Buitenshuis",
       "description": "<p>Bij Anoniem zorgen we alle mogelijke afwerking van terras tot porch of carport. Houten constructies hebben voor ons geen geheimen, dit zowel in klassieke als moderne stijl.</p>",
-      "image": {
-        "src": "/media/7k04ucys.avif",
-        "srcset": "/media/7k04ucys-p-500.avif 500w, /media/7k04ucys-p-800.avif 800w, /media/7k04ucys-p-1080.avif 1080w, /media/7k04ucys-p-1600.avif 1600w, /media/7k04ucys.avif 2881w",
-        "sizes": "(max-width: 479px) 100vw, 50vw"
-      }
+      "image": "/media/7k04ucys.avif"
     },
     {
       "id": "afwerking",
       "title": "Afwerking",
       "description": "<p>Bij Anoniem zorgen we voor de volledige afwerking van uw woning of kantoor. Elke ruimte kan door ons worden afgewerkt, van badkamer of keuken, tot leef- of slaapkamer. Van afbraak tot afwerking wordt volledig uitgevoerd door ons eigen team. Wij verzorgen zowel vloerafwerking (hout, tapijt en steen), als wanden (gyproc, ytong of baksteen), als plafonds (gyproc, hout of bezetting). Daarbuiten doen wij ook kleinschalige electriteits- en loodgieterijwerken.</p>",
-      "image": {
-        "src": "/media/peter1.avif"
-      }
+      "image": "/media/peter1.avif"
     },
     {
       "id": "projectopvolging",
       "title": "Projectopvolging",
       "description": "<p>Bij Anoniem zorgen we voor een vlotte en transparante opvolging van jouw project. Van concept tot oplevering bewaken we de voortgang, houden we alle betrokkenen op één lijn en zorgen we ervoor dat deadlines worden gehaald zonder in te boeten op kwaliteit.</p>",
-      "image": {
-        "src": "/media/img-20240325-092217-045.avif",
-        "srcset": "/media/img-20240325-092217-045-p-500.avif 500w, /media/img-20240325-092217-045.avif 1198w",
-        "sizes": "(max-width: 479px) 100vw, 50vw"
-      }
+      "image": "/media/img-20240325-092217-045.avif"
     }
   ],
   "team": [
@@ -321,14 +307,14 @@
       "name": "Wadcek Bierowka",
       "role": "Bouwspecialist",
       "bio": "<p>Wadcek bierowka (° 1980) is een oude bekende binnen onze familie.<br/>Meer dan 15 jaar geleden hielp hij al mee aan de verbouwing van onze eigen loft in Antwerpen.<br/>Nadien werkte hij verschillende jaren bij ons om nadien zijn eigen weg te gaan.<br/>Sinds 2023 is hij terug aan boord en versterkt hij ons team door zijn ervaring, kennis en onbeperkte motivatie.<br/>Zijn jarenlange ervaring enerzijds en enthousiasme om steeds bij te leren anderzijds kan voor velen een voorbeeld zijn.</p><p>‍<br/>‍</p>",
-      "image": "/media/2.jpg"
+      "image": "/media/2.avif"
     },
     {
       "id": "micha-knapczyk",
       "name": "Michał Knapczyk",
       "role": "Bouwspecialist",
       "bio": "<p>Michal (°1998) is geboren in Polen en afgestudeerd als electricien.<br/>Ondanks zijn jonge leeftijd heeft hij zich ontpopt als een echte leider en neemt hij zijn volledige verantwoordelijkheid op alle werven.<br/>In tussentijd heeft hij ook de nodige ervaring in alle andere onderdelen van het uitgebreide pakket van onze diensten.<br/>Multifunctioneel is onze basis en daarvoor is hij de geschikte schakel.<br/>Van ruwbouw tot fijne afwerking Micha gaat er altijd volledig voor en is niet vies van nieuwe uitdagingen.</p><p>Sinds 2022 maakt hij deel uit van ons team en en maakte zichzelf reeds onmisbaar...</p>",
-      "image": "/media/1.jpg"
+      "image": "/media/1.avif"
     }
   ]
 }
