@@ -7,14 +7,15 @@ export const maxDuration = 60
 
 /** Same ladder Webflow generated for this site, so uploads slot into the
  *  existing srcset shape. The full-size render is capped at FULL_WIDTH. */
-// Same ladder and quality as scripts/optimize-media.mjs, so an uploaded photo
-// behaves exactly like the bundled ones.
-const WIDTHS = [640, 1080, 1600, 2048]
+// Hobby functions get little CPU and cap at 60s, and AVIF encoding is the slow
+// part — a 2479px source with a five-rung ladder measured 52s, which is too
+// close for comfort. Three rungs, low search effort, and the browser hands us
+// an already-downscaled image (see Editor.tsx), so there is no 12-megapixel
+// decode on the server either.
+const WIDTHS = [640, 1280, 1920]
 const FULL_WIDTH = 2560
 const QUALITY = 65
-// AVIF encoding is the slow part and this runs inside a 60s function, so keep
-// the search effort low and encode every width at once.
-const EFFORT = 3
+const EFFORT = 2
 
 function slugify(name: string): string {
   const base = name.replace(/\.[^.]+$/, '')

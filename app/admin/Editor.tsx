@@ -29,13 +29,44 @@ function slugify(s: string): string {
   return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
 }
 
+/** Phone photographs run to 12 megapixels; decoding one of those on a Hobby
+ *  function is most of the upload's time budget. Downscaling here means the
+ *  server only ever sees something already close to its output size. */
+const MAX_UPLOAD_EDGE = 2560
+
+async function downscale(file: File): Promise<Blob> {
+  if (!file.type.startsWith('image/')) return file
+  try {
+    const bitmap = await createImageBitmap(file)
+    const scale = Math.min(1, MAX_UPLOAD_EDGE / Math.max(bitmap.width, bitmap.height))
+    if (scale === 1 && file.size < 4_000_000) {
+      bitmap.close()
+      return file
+    }
+    const canvas = document.createElement('canvas')
+    canvas.width = Math.round(bitmap.width * scale)
+    canvas.height = Math.round(bitmap.height * scale)
+    const ctx = canvas.getContext('2d')
+    if (!ctx) return file
+    ctx.drawImage(bitmap, 0, 0, canvas.width, canvas.height)
+    bitmap.close()
+    const blob = await new Promise<Blob | null>((res) => canvas.toBlob(res, 'image/jpeg', 0.94))
+    return blob && blob.size < file.size ? blob : file
+  } catch {
+    // No createImageBitmap, an unsupported format, a HEIC the canvas cannot
+    // read — let the server deal with the original.
+    return file
+  }
+}
+
 async function uploadImage(file: File): Promise<ImageRef> {
   const body = new FormData()
-  body.append('file', file)
+  body.append('file', await downscale(file), file.name)
   const res = await fetch('/api/upload', { method: 'POST', body })
   if (!res.ok) throw new Error(await res.text())
-  const data = (await res.json()) as { src: string; srcset: string; sizes: string }
-  return { src: data.src, srcset: data.srcset, sizes: data.sizes }
+  const data = (await res.json()) as { src: string; srcset?: string }
+  // sizes is decided by the slot the image sits in, not by the upload.
+  return data.srcset ? { src: data.src, srcset: data.srcset } : { src: data.src }
 }
 
 function Field({
