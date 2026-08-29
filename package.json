@@ -1,0 +1,23 @@
+{
+  "name": "anoniem",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "templates": "node scripts/gen-templates.mjs",
+    "dev": "npm run templates && next dev",
+    "build": "npm run templates && next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@vercel/blob": "^2.3.1",
+    "next": "15.5.4",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.2.0",
+    "typescript": "^5.9.3"
+  }
+}

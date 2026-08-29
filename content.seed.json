@@ -1,0 +1,334 @@
+{
+  "site": {
+    "title": "Anoniem",
+    "metaDescription": "Anoniem Construction Company",
+    "about": {
+      "heading": "Helpende<br/>Handen.",
+      "subheading": "Bouwspecialisten gevestigd in Antwerpen, actief over de hele wereld."
+    },
+    "contact": {
+      "email": "info@anoniem.be",
+      "emailLabel": "info(at)anoniem.build",
+      "phone": "+32 (0) 475 74 28 01",
+      "phoneHref": "tel:+32(0)475742801",
+      "instagram": "https://instagram.com/anoniem.build",
+      "instagramLabel": "(at)anoniem.build",
+      "linkedin": "https://linkedin.com/in/anoniem.build",
+      "serviceButtonHref": "mailto:info@anoniem.build"
+    },
+    "office": {
+      "address": [
+        "Schoonbroek 154",
+        "2180 Ekeren",
+        "Belgium"
+      ],
+      "hours": [
+        "Maandag — Vrijdag",
+        "9:00 — 18:00 CET",
+        "Belgium"
+      ]
+    },
+    "newsletter": {
+      "heading": "Nieuwsbrief",
+      "body": "Abonneer op onze nieuwsbrief om op de hoogte te blijven van onze samenwerkingen.",
+      "action": "https://build.us12.list-manage.com/subscribe/post?u=57911f78c286f2ced8880234e&amp;id=a0cfe9c05e&amp;f_id=007cc3e8f0",
+      "placeholder": "Jouw e-mail adres…",
+      "success": "Je bent geabonneerd.",
+      "error": "Er is iets misgelopen. Probeer opnieuw."
+    },
+    "legal": {
+      "vat": "BE0455.651.263",
+      "privacyLabel": "Privacybeleid",
+      "termsLabel": "Algemene Voorwaarden"
+    },
+    "backgrounds": {
+      "about": "/media/achtergrond.jpeg",
+      "services": "/media/20251001-184036-1.jpg"
+    }
+  },
+  "projects": [
+    {
+      "id": "project-25arve-po",
+      "title": "Project 25ARVE-PO",
+      "year": "2026",
+      "location": "Poppel",
+      "description": "<p>Afbraak oude badkamer en het creëren van een moderne instapklare badkamer, inclusief electriciteit en loodgieterij.</p>",
+      "services": "afwerking, projectopvolging",
+      "images": [
+        "/media/poppel.jpg",
+        "/media/poppel1.jpg"
+      ]
+    },
+    {
+      "id": "project-26thys-li",
+      "title": "Project 26THYS-LI",
+      "year": "2026",
+      "location": "Lier",
+      "description": "<p>Afwerking zolder (gipskartonplaten), inclusief aanpassen electriciteit</p>",
+      "services": "afwerking",
+      "images": [
+        "/media/thys-lier-1.jpg",
+        "/media/thys-lier-2.jpg"
+      ]
+    },
+    {
+      "id": "project-26thys-li",
+      "title": "Project 26THYS-LI",
+      "year": "2026",
+      "location": "Lier",
+      "description": "<p>Het heraanleggen van een ommuurd terras met blauwe steen, inclusief rioleringswerken</p>",
+      "services": "afwerking, buitenhuis",
+      "images": [
+        "/media/thys-lier-3.jpg",
+        "/media/thys-lier-5.jpg",
+        "/media/thys-lier-4.jpg"
+      ]
+    },
+    {
+      "id": "project-26dokt-ge",
+      "title": "Project 26DOKT-GE",
+      "year": "2025",
+      "location": "GEEL",
+      "description": "<p>Totaal renovatie van 2 bestaande woningen tot één nieuwe dokterpraktijk. Van afbraak tot eindafwerking.</p><p>(Gipskartonwanden, systeemplafonds, vinylvloeren, loodgieterij en electriciteit)</p>",
+      "services": "projectopvolging, afwerking",
+      "images": [
+        "/media/partijk-geel-1.jpg",
+        "/media/praktijk-geel-2.jpg",
+        "/media/praktijk-geel-3.jpg",
+        "/media/praktijk-geel-4.jpg",
+        "/media/praktijk-geel-5.jpg"
+      ]
+    },
+    {
+      "id": "project-25lind-ek",
+      "title": "Project 25LIND-EK",
+      "year": "2025",
+      "location": "Ekeren",
+      "description": "<p>In de leefruimte werd een nieuwe elektrische kachel geïntegreerd in een zwevend meubel.</p>",
+      "services": "afwerking",
+      "images": [
+        "/media/20250918-173936-1.avif",
+        "/media/20250918-173902.avif"
+      ]
+    },
+    {
+      "id": "project-24hypo-li",
+      "title": "Project 24HYPO-LI",
+      "year": "2024",
+      "location": "Lier",
+      "description": "<p>Renovatie van een HYPOTHEEK-winkel in Lier, van afbraak tot afwerking.</p>",
+      "services": "afwerking, ruwbouw",
+      "images": [
+        "/media/20260126-133545.jpg",
+        "/media/20260126-133550.jpg"
+      ]
+    },
+    {
+      "id": "project-24lima-be",
+      "title": "Project 24LIMA-BE",
+      "year": "2024",
+      "location": "Berchem",
+      "description": "<p>Het vervangen van keukenbladen en spatwanden in een bestaande keuken.</p>",
+      "services": "afwerking",
+      "images": [
+        "/media/img-20250109-170735-495.jpg"
+      ]
+    },
+    {
+      "id": "project-24tero-ka",
+      "title": "Project 24TERO-KA",
+      "year": "2024",
+      "location": "Kapellen",
+      "description": "<p>Het vervangen van een bestaande uitbouw, met nieuwe ramen en dakconstructie, alsook de binnenafwerking in gyproc.</p><p>‍</p>",
+      "services": "afwerking, ruwbouw, projectopvolging, buitenhuis",
+      "images": [
+        "/media/9xujijca.avif"
+      ]
+    },
+    {
+      "id": "project-24avev-po",
+      "title": "Project 24AVEV-PO",
+      "year": "2024",
+      "location": "Poppel",
+      "description": "<p>Renovatie bestaande badkamer, waarbij het ligbad vervangen werd door een hedendaagse inloopdouche, met alle bijhorend comfort.</p>",
+      "services": "afwerking, ruwbouw",
+      "images": [
+        "/media/poppel.avif",
+        "/media/poppel1.avif"
+      ]
+    },
+    {
+      "id": "project-24wich-de",
+      "title": "Project 24WICH-DE",
+      "year": "2024",
+      "location": "Deurne",
+      "description": "<p>Renovatie bestaande badkamer, met moderne materialen met een gewaagd tegeldesign.</p>",
+      "services": "afwerking, ruwbouw",
+      "images": [
+        "/media/20250928-183731-2.avif",
+        "/media/20250928-183738.avif",
+        "/media/20250928-183803.avif",
+        "/media/20250928-183832-2.avif"
+      ]
+    },
+    {
+      "id": "project-24clar-st",
+      "title": "Project 24CLAR-ST",
+      "year": "2024",
+      "location": "ST-JOB",
+      "description": "<p>Het plaatsen van systeemplafonds en sanitaire tussenwanden in kunststof.</p>",
+      "services": "afwerking",
+      "images": [
+        "/media/clarafe1.avif"
+      ]
+    },
+    {
+      "id": "project-24laol-lo",
+      "title": "Project 24LAOL-LO",
+      "year": "2024",
+      "location": "Loenhout",
+      "description": "<p>Herinrichting van 'La Olteanu', Magazin Romanesc, een delicatesse zaak met Roemeense producten.<br/>Wij plaatsen een volledig systeemplafond, alsook de houten luifel boven de toog.</p>",
+      "services": "afwerking",
+      "images": [
+        "/media/winkel1.avif",
+        "/media/winkel2.avif"
+      ]
+    },
+    {
+      "id": "project-24wiba-de",
+      "title": "Project 24WIBA-DE",
+      "year": "2024",
+      "location": "Deurne, België",
+      "description": "<p>Complete renovatie van een oude badkamer naar een moderne ruimte met hedendaags comform in een klassieke stijl.</p>",
+      "services": "Projectopvolging, Afwerking, Buitenshuis, Ruwbouw",
+      "images": [
+        "/media/wito1.avif",
+        "/media/wito2.avif"
+      ]
+    },
+    {
+      "id": "project-22depo-li",
+      "title": "Project 22DEPO-LI",
+      "year": "2022",
+      "location": "Linkeroever (Antwerpen)",
+      "description": "<p>Het bouwen van een volledige extra woonunit, met 3 slaapkamer in sketelbouw bovenop een bestaande garage. Vanaf de ruwbouw tot en met de volledige afwerking werd door ons team uitgevoerd. De gevel werd afgewerkt met zinken panelen.</p>",
+      "services": "ruwbouw, afwerking, buitenhuis, projectopvolging",
+      "images": [
+        "/media/xvrrftcw.avif",
+        "/media/aj267lm.avif"
+      ]
+    },
+    {
+      "id": "project-21debr-br",
+      "title": "Project 21DEBR-BR",
+      "year": "2020",
+      "location": "Brasschaat",
+      "description": "<p>Het ontwerpen en realiseren van een extra unit in de tuin.</p>",
+      "services": "buitenhuis, afwerking, ruwbouw",
+      "images": [
+        "/media/eiqemga.avif",
+        "/media/0b0rdkpk.avif"
+      ]
+    },
+    {
+      "id": "project-20mans-an",
+      "title": "Project 20MANS-AN",
+      "year": "2020",
+      "location": "Antwerpen",
+      "description": "<p>Op de hoogste verdieping van een appartementsgebouw werd een houten terras geplaatst op een staalbouw, volledig rondom rond de centrale toegangsmodule.</p>",
+      "services": "buitenhuis, ruwbouw",
+      "images": [
+        "/media/ejofjtyq.avif",
+        "/media/whnwzuay.avif"
+      ]
+    },
+    {
+      "id": "project-20pead-be",
+      "title": "Project 20PEAD-BE",
+      "year": "2020",
+      "location": "Berchem",
+      "description": "<p>Uitbreiding van de herenhuis in Berchem waarbij een extra zithoek/bureelruimte werd gecreëerd bovenop de bestaande achterbouw.<br/>Deze constructie werd opgebouwd uit een houten skelet bekleed met een hardhouten gevelbeplating (Merbau). De volledige binnenafwerking werd uitgevoerd in gipskartonplaten.</p>",
+      "services": "Projectopvolging, Afwerking, Buitenshuis",
+      "images": [
+        "/media/peter1.avif",
+        "/media/peter2.avif"
+      ]
+    },
+    {
+      "id": "project-20vrij-ek",
+      "title": "Project 20VRIJ-EK",
+      "year": "2020",
+      "location": "Ekeren",
+      "description": "<p>Op een bestaande achterbouw werd een uitbouw gecreëerd, volgens het sketelbouw-principe, met een afwerking in THERMOWOOD die dienst doet als badkamer en wasplaats.<br/>‍</p>",
+      "services": "Projectopvolging, buitenhuis, afwerking",
+      "images": [
+        "/media/vrijens1.avif",
+        "/media/vrijens2.avif",
+        "/media/vrijens3.avif"
+      ]
+    }
+  ],
+  "services": [
+    {
+      "id": "ruwbouw",
+      "title": "Ruwbouw",
+      "description": "<p>Voor alle ruwbouwwerken kan u ook bij ons terecht. Zowel voor het plaatsen van steunbalken of poutrellen, als het uitvoeren van beton- en metselwerken. Ook kleine graaf- en funderingswerken kunnen wij u verzorgen. Tevens maken wij ook deuropeningen met lenteel in alle mogelijke muren.</p>",
+      "image": {
+        "src": "/media/dsc01229-1.avif",
+        "srcset": "/media/dsc01229-1-p-500.avif 500w, /media/dsc01229-1-p-800.avif 800w, /media/dsc01229-1.avif 1600w",
+        "sizes": "(max-width: 479px) 100vw, 50vw"
+      }
+    },
+    {
+      "id": "buitenshuis",
+      "title": "Buitenshuis",
+      "description": "<p>Bij Anoniem zorgen we alle mogelijke afwerking van terras tot porch of carport. Houten constructies hebben voor ons geen geheimen, dit zowel in klassieke als moderne stijl.</p>",
+      "image": {
+        "src": "/media/7k04ucys.avif",
+        "srcset": "/media/7k04ucys-p-500.avif 500w, /media/7k04ucys-p-800.avif 800w, /media/7k04ucys-p-1080.avif 1080w, /media/7k04ucys-p-1600.avif 1600w, /media/7k04ucys.avif 2881w",
+        "sizes": "(max-width: 479px) 100vw, 50vw"
+      }
+    },
+    {
+      "id": "afwerking",
+      "title": "Afwerking",
+      "description": "<p>Bij Anoniem zorgen we voor de volledige afwerking van uw woning of kantoor. Elke ruimte kan door ons worden afgewerkt, van badkamer of keuken, tot leef- of slaapkamer. Van afbraak tot afwerking wordt volledig uitgevoerd door ons eigen team. Wij verzorgen zowel vloerafwerking (hout, tapijt en steen), als wanden (gyproc, ytong of baksteen), als plafonds (gyproc, hout of bezetting). Daarbuiten doen wij ook kleinschalige electriteits- en loodgieterijwerken.</p>",
+      "image": {
+        "src": "/media/peter1.avif"
+      }
+    },
+    {
+      "id": "projectopvolging",
+      "title": "Projectopvolging",
+      "description": "<p>Bij Anoniem zorgen we voor een vlotte en transparante opvolging van jouw project. Van concept tot oplevering bewaken we de voortgang, houden we alle betrokkenen op één lijn en zorgen we ervoor dat deadlines worden gehaald zonder in te boeten op kwaliteit.</p>",
+      "image": {
+        "src": "/media/img-20240325-092217-045.avif",
+        "srcset": "/media/img-20240325-092217-045-p-500.avif 500w, /media/img-20240325-092217-045.avif 1198w",
+        "sizes": "(max-width: 479px) 100vw, 50vw"
+      }
+    }
+  ],
+  "team": [
+    {
+      "id": "erwin-mortier",
+      "name": "Erwin Mortier",
+      "role": "Oprichter/zaakvoerder",
+      "bio": "<p>Erwin Mortier (°07-03-1967) is afgestudeerd als licentiaat productontwikkeling en industriële vormgeving in Antwerpen in 1992.<br/>Al tijdens zijn studententijd was hij actief in de bouw als jobstudent hielp hij verschillende bouwprojecten tot een goed einde.<br/>Na zijn studie richtte hij zich hoofdzakelijk tot het vervaardigen van maquettes en schaalmodellen van zowel industrieel machines en toestellen, <br/>als woningen en gebouwen.<br/>Eind jaren 90 werd de focus verlegd naar renovatie- en verbouwingswerken, eerst als zelfwerkende patroon later als werf- en projectleider.<br/>Ook op zelfstandige basis werden er voor andere bedrijven projecten tot voltooiing gebracht.<br/>De laatste jaren werden er steeds meer eigen projecten uitgevoerd en werden er ook terug werknemers geëngageerd.<br/>Tijdens deze ganse periode werden er op privévlak ook niet stil gezeten en werden er verschillende eigendommen verbouwd zowel in binnen- als buitenland.<br/></p><p>Ondanks dat Erwin hoofdzakelijk projecten opvolgt en begeleidt, is hij nog steeds niet vies om zelf de handen uit de mouwen te steken...</p>",
+      "image": "/media/sjaal.avif"
+    },
+    {
+      "id": "wadcek-bierowka",
+      "name": "Wadcek Bierowka",
+      "role": "Bouwspecialist",
+      "bio": "<p>Wadcek bierowka (° 1980) is een oude bekende binnen onze familie.<br/>Meer dan 15 jaar geleden hielp hij al mee aan de verbouwing van onze eigen loft in Antwerpen.<br/>Nadien werkte hij verschillende jaren bij ons om nadien zijn eigen weg te gaan.<br/>Sinds 2023 is hij terug aan boord en versterkt hij ons team door zijn ervaring, kennis en onbeperkte motivatie.<br/>Zijn jarenlange ervaring enerzijds en enthousiasme om steeds bij te leren anderzijds kan voor velen een voorbeeld zijn.</p><p>‍<br/>‍</p>",
+      "image": "/media/2.jpg"
+    },
+    {
+      "id": "micha-knapczyk",
+      "name": "Michał Knapczyk",
+      "role": "Bouwspecialist",
+      "bio": "<p>Michal (°1998) is geboren in Polen en afgestudeerd als electricien.<br/>Ondanks zijn jonge leeftijd heeft hij zich ontpopt als een echte leider en neemt hij zijn volledige verantwoordelijkheid op alle werven.<br/>In tussentijd heeft hij ook de nodige ervaring in alle andere onderdelen van het uitgebreide pakket van onze diensten.<br/>Multifunctioneel is onze basis en daarvoor is hij de geschikte schakel.<br/>Van ruwbouw tot fijne afwerking Micha gaat er altijd volledig voor en is niet vies van nieuwe uitdagingen.</p><p>Sinds 2022 maakt hij deel uit van ons team en en maakte zichzelf reeds onmisbaar...</p>",
+      "image": "/media/1.jpg"
+    }
+  ]
+}
