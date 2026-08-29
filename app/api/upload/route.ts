@@ -10,6 +10,9 @@ export const maxDuration = 60
 const WIDTHS = [500, 800, 1080, 1600]
 const FULL_WIDTH = 2560
 const QUALITY = 62
+// AVIF encoding is the slow part and this runs inside a 60s function, so keep
+// the search effort low and encode every width at once.
+const EFFORT = 3
 
 function slugify(name: string): string {
   const base = name.replace(/\.[^.]+$/, '')
@@ -41,31 +44,30 @@ export async function POST(req: Request) {
   // A unique-enough prefix keeps two uploads of "IMG_1234.jpg" apart.
   const stem = `${Date.now().toString(36)}-${slugify(file.name)}`
 
-  async function encode(width: number | null): Promise<Buffer> {
-    const pipeline = sharp(input).rotate()
-    if (width) pipeline.resize({ width, withoutEnlargement: true })
-    return pipeline.avif({ quality: QUALITY }).toBuffer()
-  }
-
   const fullWidth = Math.min(sourceWidth, FULL_WIDTH)
-  const full = await put(`media/${stem}.avif`, await encode(fullWidth), {
-    access: 'public',
-    contentType: 'image/avif',
-    addRandomSuffix: false,
-    allowOverwrite: true,
-  })
 
-  const srcsetParts: string[] = []
-  for (const w of WIDTHS) {
-    if (w >= fullWidth) continue
-    const variant = await put(`media/${stem}-p-${w}.avif`, await encode(w), {
-      access: 'public',
+  // Decode and orient once; every width is encoded from that single bitmap.
+  const oriented = await sharp(input).rotate().resize({ width: fullWidth, withoutEnlargement: true }).toBuffer()
+
+  async function store(pathname: string, width: number | null) {
+    const pipeline = sharp(oriented)
+    if (width) pipeline.resize({ width, withoutEnlargement: true })
+    const body = await pipeline.avif({ quality: QUALITY, effort: EFFORT }).toBuffer()
+    return put(pathname, body, {
+      access: 'public' as const,
       contentType: 'image/avif',
       addRandomSuffix: false,
       allowOverwrite: true,
     })
-    srcsetParts.push(`${variant.url} ${w}w`)
   }
+
+  const widths = WIDTHS.filter((w) => w < fullWidth)
+  const [full, ...variants] = await Promise.all([
+    store(`media/${stem}.avif`, null),
+    ...widths.map((w) => store(`media/${stem}-p-${w}.avif`, w)),
+  ])
+
+  const srcsetParts = variants.map((v, i) => `${v.url} ${widths[i]}w`)
   srcsetParts.push(`${full.url} ${fullWidth}w`)
 
   return Response.json({
