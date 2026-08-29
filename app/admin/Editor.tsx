@@ -239,6 +239,9 @@ export default function Editor({ initial }: { initial: Content }) {
       if (!res.ok) throw new Error(await res.text())
       setStatus('saved')
       setDirty(false)
+      // Vercel Blob is eventually consistent: the save is stored at once but
+      // takes a few seconds to be readable everywhere.
+      setMessage('Opgeslagen. Binnen ongeveer tien seconden zichtbaar op de site.')
     } catch (err) {
       setStatus('error')
       setMessage(err instanceof Error ? err.message : 'Opslaan mislukt')
@@ -285,7 +288,9 @@ export default function Editor({ initial }: { initial: Content }) {
         </div>
       </header>
 
-      {message ? <p className="banner banner--error">{message}</p> : null}
+      {message ? (
+        <p className={`banner${status === 'error' ? ' banner--error' : ''}`}>{message}</p>
+      ) : null}
       {busy ? <p className="banner">Afbeelding wordt verwerkt…</p> : null}
 
       <main className="page">

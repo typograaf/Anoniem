@@ -8,9 +8,11 @@ diffing the text against the original TTF:
     everywhere -- so the outlines at the default instance are byte-identical
     and the rendering is pixel-identical. 1000 KB -> 230 KB.
 
-  * Glyphs are NOT subset. A Latin subset saves another 28 KB but shifts glyph
+  * Glyphs are NOT subset. A Latin subset saves another 29 KB but shifts glyph
     positioning enough to change 3.2% of the pixels in a block of body text
-    (max channel delta 166). Not worth it.
+    (max channel delta 166). Tried with `retain_gids` to keep GPOS lookups
+    pointing at the same glyph ids -- same 3.2%. Not worth it for 29 KB on an
+    asset that is immutable-cached for a year.
 
 `wght` and `opsz` stay variable: the site renders headings at 120px and body at
 10px, and font-optical-sizing defaults to auto, so opsz is genuinely in use.
